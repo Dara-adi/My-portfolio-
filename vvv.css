@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+}
+
+
+header {
+    background-color: #000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    letter-spacing: 5px;
+    animation: fadeIn 2s ease;
+}
+
+.highlight {
+    color: #00d9ff;
+    animation: colorPulse 3s infinite;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: slideIn 1.5s ease;
+}
+
+.btn {
+    background: linear-gradient(45deg, #00d9ff, #f39c12);
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+section {
+    padding: 80px 20px;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.about-split {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-image {
+    background: url('https://via.placeholder.com/500') no-repeat center center/cover;
+    width: 50%;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes colorPulse {
+    0%, 100% { color: #00d9ff; }
+    50% { color: #f39c12; }
+}

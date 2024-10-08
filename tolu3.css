@@ -1,0 +1,279 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Lora', serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('fashion-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .hero-content {
+    z-index: 2;
+    animation: fadeIn 2s ease-out;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 12px 30px;
+    background-color: #fff;
+    color: #1c1c1c;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #ddd;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+
+/* About Section */
+.about {
+    background: #f4f4f9;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.about .content {
+    max-width: 800px;
+}
+
+.about img {
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Work Section */
+.work {
+    padding: 80px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.work-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.work-item {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.work-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.work-item:hover img {
+    transform: scale(1.1);
+}
+
+.work-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s;
+}
+
+.work-item:hover .overlay {
+    opacity: 1;
+}
+
+.work-item h3 {
+    color: #fff;
+    font-size: 24px;
+    z-index: 2;
+}
+
+/* Services Section */
+.services {
+    padding: 80px 20px;
+    background: #f4f4f9;
+    text-align: center;
+}
+
+.service-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.service-item {
+    max-width: 300px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 20px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact input, .contact textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.contact button {
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: #1c1c1c;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #444;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #1c1c1c;
+    color: #fff;
+    text-align: center;
+}
+
+footer .social-links {
+    margin-top: 20px;
+}
+
+footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+footer .social-links a:hover {
+    color: #ddd;
+}
+
+/* Animations */
+@keyframes
+}
+/* Testimonial Slider */
+.testimonials {
+    padding: 80px 20px;
+    background: #f4f4f9;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slide {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    transition: transform 0.5s ease;
+}
+
+.slide p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.slide cite {
+    display: block;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Add JavaScript or use a plugin for slider functionality */
