@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas - Innovate Your Sport</title>
+    <Link rel="icon" href="vecteezy_adidas-logo-white-symbol-with-name-clothes-design-icon_10994345-removebg-preview.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="vecteezy_adidas-logo-white-symbol-with-name-clothes-design-icon_10994345-removebg-preview.png" alt="Adidas Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Innovate Your Sport</h1>
+            <p>Redefining the Future of Performance</p>
+            <a href="#products" class="btn">Explore Now</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Adidas</h2>
+        <p>Adidas is a pioneer in pushing the boundaries of sportswear innovation. Discover our commitment to sustainability, technology, and creativity.</p>
+    </section>
+
+    <section id="products" class="products-section">
+        <h2>Our Latest Collections</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="Screenshot 2024-09-22 15.42.29.png" alt="Adidas Ultraboost">
+                <div class="product-info">
+                    <h3>Adidas Ultraboost</h3>
+                    <p>Experience unparalleled comfort and performance with Ultraboost.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="Screenshot 2024-09-22 15.43.11.png" alt="Adidas NMD">
+                <div class="product-info">
+                    <h3>Adidas NMD</h3>
+                    <p>Innovative design meets ultimate comfort with NMD.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="Screenshot 2024-09-22 15.44.25.png" alt="Adidas Originals">
+                <div class="product-info">
+                    <h3>Adidas Originals</h3>
+                    <p>Classic style with modern performance in our Originals line.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section 1d="contact">
+        <div class="footer-content">
+            <p>&copy; 2024 Adidas | All Rights Reserved</p>
+            <div class="social-media">
+                <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2zm0 2v14h14V5H5zm2 2h10v10H7V7zm0 12h10v2H7v-2z"/></svg></a>
+                <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4h16v16H4V4zm1 1v14h14V5H5zm4 3h6v6H9V8zm0 8h6v2H9v-2z"/></svg></a>
+                <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c2.212 0 4-1.788 4-4S14.212 0 12 0 8 1.788 8 4s1.788 4 4 4zm0 2c-4.418 0-8 3.582-8 8 0 4.418 3.582 8 8 8s8-3.582 8-8c0-4.418-3.582-8-8-8z"/></svg></a>
+               
+            </div>
+        </div>
+             </section>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Header background change on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+</html>

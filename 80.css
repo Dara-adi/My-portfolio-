@@ -1,0 +1,68 @@
+*{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+.projects {
+    background-color: #e9ecef;
+    padding: 80px 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center; /* Center the grid items */
+}
+
+.project {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 15px var(--shadow-color);
+    background: var(--light-background);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 100%; /* Ensure projects don't exceed container width */
+}
+
+.project:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px var(--hover-shadow-color);
+}
+
+.project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--primary-color);
+    transition: opacity 0.3s;
+}
+
+.project-details {
+    padding: 20px;
+}
+
+.project-details h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.project-description {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+
+.project-tech {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+

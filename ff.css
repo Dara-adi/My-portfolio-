@@ -1,0 +1,243 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dara{
+    margin:90px;
+    margin-bottom:-90px;
+}
+
+header {
+    background: url('WhatsApp Image 2024-09-20 at 17.33.11.jpeg') no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: linear-
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.logo img {
+    width:50px;
+    
+}
+
+.main-content {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.activities {
+    flex: 3;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.activities h2 {
+    color: #76c7c0;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.activity {
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activity img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.activity:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Login Box */
+.login-box {
+    flex: 1;
+    background-color: #222;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.login-box h2 {
+    color: lightgreen;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box input {
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-box input:focus {
+    background-color: #444;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-box button {
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #76c7c0;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-box button:hover {
+    background-color: #5eb2b0;
+    transform: scale(1.05);
+}
+
+.login-box:hover {
+    transform: scale(1.02);
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: lightgreen;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.testimonial-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.testimonial {
+    background-color: #2b2b2b;
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background-color: #121212;
+    padding: 30px;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+footer a {
+    color: #76c7c0;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Programs Section Styling */
+.programs-section {
+    padding: 50px;
+    background-color: #1e1e1e;
+}
+
+.programs-section h2 {
+    color: skyblue;
+    text-align: center;
+    text-shadow: 0 0 5px;
+    }
+
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
